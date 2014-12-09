@@ -1,0 +1,38 @@
+body{
+  background-color: #eeeeee;
+}
+
+.top-spacing {
+  margin-top: 20px;
+}
+
+
+.top-spacing-big {
+  margin-top: 18%;
+}
+
+.header-login{
+	color: #fff;
+	background-color: #3071a9;
+	border-color: #285e8e;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.footer{
+	position: fixed;
+	bottom: 5px;
+	font-size: 12px;
+	margin-left: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer{
+	position: fixed;
+	bottom: 5px;
+	font-size: 12px;
+	margin-left: 20%;
+}
+}

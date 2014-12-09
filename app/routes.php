@@ -11,6 +11,15 @@
 |
 */
 
+Route::group(array('prefix' => 'admin'), function()
+{
+
+    Route::get('login', array( 'as' => 'login', 'uses' => 'UsersController@login'));
+    Route::post('login', array( 'as' => 'login.post', 'uses' => 'UsersController@postLogin'));
+    Route::get('logout', array( 'as' => 'logout', 'uses' => 'UsersController@logout'));
+
+});
+
 Route::get('/', function()
 {
 	return View::make('hello');

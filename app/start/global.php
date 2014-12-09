@@ -79,3 +79,5 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+require app_path().'/start/form_macro.php';
+require app_path().'/start/html_macro.php';
