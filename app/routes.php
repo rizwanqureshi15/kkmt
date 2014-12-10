@@ -25,7 +25,7 @@ Route::group(array('prefix' => 'admin'), function()
 {
 
     Route::resource('users', 'UsersController');
-
+    Route::resource('groups', 'GroupsController');
 });
 
 Route::get('/', function()

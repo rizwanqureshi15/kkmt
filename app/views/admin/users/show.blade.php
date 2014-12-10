@@ -49,6 +49,11 @@
           <dd>{{ Config::get("user_roles.$user->role") }}</dd>
         </dl>
 
+        <dl class="dl-horizontal">
+          <dt>Status:</dt>
+          <dd>{{ Config::get("user_status.$user->is_active") }}</dd>
+        </dl>
+
 
 
           <div>
