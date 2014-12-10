@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration {
 			$table->string('username', 64);
 			$table->string('password', 64);
 			$table->string('email');
-			$table->integer('mobile_no');
+			$table->string('mobile_no', 16);
 			$table->text('address');
 			$table->string('role', 16);
 			$table->boolean('is_active')->default(true);

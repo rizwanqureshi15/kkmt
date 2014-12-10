@@ -8,7 +8,7 @@ body{
 
 
 .top-spacing-big {
-  margin-top: 18%;
+  margin-top: 10%;
 }
 
 .header-login{
@@ -22,7 +22,7 @@ body{
 }
 
 .footer{
-	position: fixed;
+	position: relative;
 	bottom: 5px;
 	font-size: 12px;
 	margin-left: 40%;
@@ -34,5 +34,73 @@ body{
 	bottom: 5px;
 	font-size: 12px;
 	margin-left: 20%;
+	}
 }
+
+.navbar-default {
+	color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #fff;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #fff;
+	background-color: transparent;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+.dropdown-menu {
+	color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+	background-color: #4169FC;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+	color: #fff;
+	background-color: #4169FC;
+}
+
+.dropdown-menu>li>a{
+	color: #fff;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	color: #fff;
+	background-color: #4169FC;
+}
+
+.btn-add{
+	margin-bottom: 15px;
+}
+
+.profile-pic{
+		margin-bottom: 5px;
+	}
+
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	 color: #fff; 
+	}
 }
