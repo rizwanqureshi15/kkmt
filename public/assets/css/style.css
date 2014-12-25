@@ -29,6 +29,11 @@ body{
 	margin-top: 20px;
 }
 
+.img-size{
+	max-width: 75px;
+	max-height: 75px;
+}
+
 @media screen and (max-width: 600px) {
   .footer{
 	position: fixed;

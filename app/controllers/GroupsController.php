@@ -31,7 +31,7 @@ class GroupsController extends BaseController {
 		}
 
 
-		$Group = new Group();
+		$group = new Group();
 		$group->fill($input);
 		$group->save();
 		return Redirect::route('admin.groups.index')->withSuccess('Group created successfully');

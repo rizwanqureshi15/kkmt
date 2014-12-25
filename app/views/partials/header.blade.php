@@ -19,7 +19,7 @@
           <li class="{{ Request::url() == URL::route('admin.users.index') ? 'active' : ''}}"><a href="{{ URL::route('admin.users.index') }}"> Users<span class="sr-only">(current)</span></a></li>
           <li class="{{ Request::url() == URL::route('admin.groups.index') ? 'active' : ''}}"><a href="{{ URL::route('admin.groups.index') }}">Groups</a></li>
           @endif
-          <li><a href="#">Members</a></li>
+          <li class="{{ Request::url() == URL::route('admin.members.index') ? 'active' : ''}}" ><a href="{{ URL::route('admin.members.index') }}">Members</a></li>
         </ul>
         
         <ul class="nav navbar-nav navbar-right">

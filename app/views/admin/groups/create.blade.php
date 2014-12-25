@@ -34,7 +34,7 @@
 
               <div class="form-group">
                 <div class="col-md-offset-5 col-md-9 col-xs-offset-1 col-xs-10">
-                  <button type="submit" class="btn btn-primary btn-login">Add Group</button>
+                  <button type="submit" class="btn btn-primary btn-login">Add</button>
                   <a href="javascript:history.back();" class="btn btn-primary">Cancel</a>
                 </div>
               </div>

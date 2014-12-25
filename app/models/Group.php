@@ -13,10 +13,10 @@ class Group extends Eloquent {
 
 	protected $fillable = array('name', 'date', 'total_members', 'is_active');
 
-	// public function members()
- //    {
- //        return $this->hasMany('Member');
- //    }
+	public function members()
+    {
+        return $this->hasMany('Member');
+    }
 
 
 }
