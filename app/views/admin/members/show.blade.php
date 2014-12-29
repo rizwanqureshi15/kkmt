@@ -3,8 +3,12 @@
 @section('content')
     <div class="row">
     	<div class="col-xs-8 col-md-6 col-xs-offset-2 col-md-offset-3" >
+        {{ HTML::alert() }}
 
-        <legend>{{ $member->name }}</legend>
+        <legend>
+          {{ $member->name }}
+          <span class="btn-amount"><a href="{{ URL::route("admin.members.amounts.create", $member->id) }}" class="btn btn-primary">Add Amount</a></span>
+        </legend>
 
         <div class="row">
           <div class="col-md-3 profile-pic">
@@ -44,6 +48,21 @@
           <dd>{{ $member->group->name }}</dd>
         </dl>
 
+        @if($member->amounts->count())
+         <dl class="dl-horizontal">
+          <dt>Amounts:</dt>
+          <dd>
+            <?php $i = 1; ?>
+            @foreach($member->amounts as $amount)
+              <span><strong>{{ $i }}: </strong></span>
+              <span><strong>Date:</strong> {{ $amount->date->format('d-m-Y') }}</span>
+              <span><strong>Rs:</strong> {{ $amount->amount }}</span>
+              <span><a href="{{ URL::route("admin.members.amounts.edit", [$member->id, $amount->id]) }}" class="btn btn-primary">Edit</a></span>
+              <?php $i++; ?>
+            @endforeach
+          </dd>
+        </dl>
+        @endif
         
 
           <div>

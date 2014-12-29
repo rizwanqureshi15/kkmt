@@ -27,6 +27,8 @@ Route::group(array('prefix' => 'admin'), function()
     Route::resource('users', 'UsersController');
     Route::resource('groups', 'GroupsController');
     Route::resource('members', 'MembersController');
+    Route::resource('amounts', 'AmountsController');
+    Route::resource('members.amounts', 'MembersAmountsController');
 });
 
 Route::get('/', function()

@@ -104,9 +104,25 @@ body{
 	margin-bottom: 5px;
 }
 
+.btn-amount{
+	float: right;
+	margin-top: -10px;
+}
+
 
 @media (max-width: 767px) {
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
 	 color: #fff; 
+	}
+
+	.btn-amount{
+		margin-top: 5px;
+		float: left;
+		margin-bottom: 5px;
+	}
+
+	.btn-amount-delete{
+		margin-top: 5px;
+		margin-left: 40px;
 	}
 }

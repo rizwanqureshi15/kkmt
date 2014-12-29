@@ -25,5 +25,10 @@ class Member extends Eloquent {
     }
 
 
+    public function amounts()
+    {
+    	return $this->hasMany('Amount');
+    }
+
 
 }

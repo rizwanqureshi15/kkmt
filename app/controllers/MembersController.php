@@ -50,7 +50,7 @@ class MembersController extends BaseController {
 		$member = new Member();
 		$member->fill($input);
 		$member->save();
-		return Redirect::route('admin.members.index')->withSuccess('Member created successfully');
+		return Redirect::route('admin.members.show', $member->id)->withSuccess('Member created successfully');
 	}
 
 
@@ -102,7 +102,7 @@ class MembersController extends BaseController {
 
 		$member->fill($input);
 		$member->save();
-		return Redirect::route('admin.members.index')->withSuccess('Member updated successfully');
+		return Redirect::route('admin.members.show', $member->id)->withSuccess('Member updated successfully');
 
 	}
 
