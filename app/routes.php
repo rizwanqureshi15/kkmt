@@ -29,6 +29,10 @@ Route::group(array('prefix' => 'admin'), function()
     Route::resource('members', 'MembersController');
     Route::resource('amounts', 'AmountsController');
     Route::resource('members.amounts', 'MembersAmountsController');
+
+    Route::get('reports/groups/print/{id?}', array( 'as' => 'report_by_group_print', 'uses' => 'ReportsController@prints'));
+    Route::get('reports/groups/{id?}', array( 'as' => 'report_by_group', 'uses' => 'ReportsController@group'));
+
 });
 
 Route::get('/', function()

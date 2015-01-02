@@ -54,10 +54,10 @@
           <dd>
             <?php $i = 1; ?>
             @foreach($member->amounts as $amount)
-              <span><strong>{{ $i }}: </strong></span>
-              <span><strong>Date:</strong> {{ $amount->date->format('d-m-Y') }}</span>
-              <span><strong>Rs:</strong> {{ $amount->amount }}</span>
-              <span><a href="{{ URL::route("admin.members.amounts.edit", [$member->id, $amount->id]) }}" class="btn btn-primary">Edit</a></span>
+              <p><strong>{{ $i }}: </strong></p>
+              <p><strong>Date:</strong> {{ $amount->date->format('d-m-Y') }}</p>
+              <p><strong>Rs:</strong> {{ $amount->amount }}</p>
+              <p><a href="{{ URL::route("admin.members.amounts.edit", [$member->id, $amount->id]) }}" class="btn btn-primary">Edit</a></p>
               <?php $i++; ?>
             @endforeach
           </dd>

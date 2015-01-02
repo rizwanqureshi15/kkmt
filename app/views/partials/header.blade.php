@@ -21,6 +21,16 @@
           @endif
           <li class="{{ Request::url() == URL::route('admin.members.index') ? 'active' : ''}}" ><a href="{{ URL::route('admin.members.index') }}">Members</a></li>
         </ul>
+
+         <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reports<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="{{ URL::route('report_by_group') }}">By Group</a></li>
+              <li><a href="{{ URL::route('report_by_group_print') }}">By Group for print</a></li>
+            </ul>
+          </li>
+        </ul>
         
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">

@@ -45,9 +45,6 @@
             <div class="col-md-offset-6 col-md-9 col-xs-offset-1 col-xs-10">
               <button type="submit" class="btn btn-primary btn-login">Update</button>
               <a href="javascript:history.back();" class="btn btn-primary">Cancel</a>
-              {{ Form::open(array('route' => array('admin.members.amounts.destroy', $amount->member->id, $amount->id), 'method' => 'delete')) }}
-                <button class="btn btn-danger btn-amount-delete">Delete</button>
-              {{ Form::close() }}
             </div>
           </div>
 
