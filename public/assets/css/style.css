@@ -113,6 +113,22 @@ body{
 	margin-top: 75px;
 }
 
+.contact{
+	color:  #fff;
+}
+
+.contact h2{
+	font-size: 24px;
+}
+
+.contact p{
+	line-height: 1;	
+}
+
+.umrah-image{
+	max-width: 320px;
+	max-height: 200px;
+}
 
 @media (max-width: 767px) {
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a {

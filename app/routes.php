@@ -37,5 +37,5 @@ Route::group(array('prefix' => 'admin'), function()
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('home');
 });
