@@ -68,6 +68,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="{{ URL::route('login') }}">Admin Login</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
